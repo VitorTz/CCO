@@ -1,0 +1,12 @@
+{
+    "cores": {
+        "vermelho": "#e74c3c",
+        "amarelo": "#f1c40f",
+        "verde": "#2ecc71",
+        "azul": "#3498db",
+        "cinza": "#24262f",
+        "deep-blue": "#0F1923",
+        "white": "#FFFFFF",
+        "black": "#000000"
+    }
+}

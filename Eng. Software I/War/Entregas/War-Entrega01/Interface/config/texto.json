@@ -1,0 +1,11 @@
+{
+    "texto_descricao_acao": {
+        "esperar": "Espere pelo seu turno",
+        "fortificar": "Distribua suas tropas em seus territorios",
+        "atacar1": "Selecione o territorio que vai partir o ataque",
+        "atacar2": "Selecione o territorio que deseja atacar",
+        "deslocar1": "Selecione o territorio para transferir exercitos",
+        "deslocar2": "Selecione o territorio que recebera exercitos",
+        "passar_turno": "Espere pelo seu turno"
+    }
+}

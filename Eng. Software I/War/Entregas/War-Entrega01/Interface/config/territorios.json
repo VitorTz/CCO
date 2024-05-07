@@ -1,0 +1,132 @@
+{
+    "territorios": {
+        "Sagar": {
+            "x": 985,
+            "y": 193,
+            "jogador": "vermelho",
+            "cor": "#ece29a",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },
+        "Fremia": {
+            "x": 888,
+            "y": 103,
+            "jogador": "vermelho",
+            "cor": "#e0b097",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },  
+        "Norhan": {
+            "x": 780,
+            "y": 117,
+            "jogador": "amarelo",
+            "cor": "#bfd0a8",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },
+        "Dorcilia": {
+            "x": 926,
+            "y": 231,
+            "jogador": "azul",
+            "cor": "#d5d8d1",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },
+        "Tarhan": {
+            "x": 230,
+            "y": 140,
+            "jogador": "verde",
+            "cor": "#bfd0a8",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },
+        "Huis": {
+            "x": 1130,
+            "y": 420,
+            "jogador": "verde",
+            "cor": "#e3b4a2",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },
+        "Serlaq": {
+            "x": 1110,
+            "y": 360,
+            "jogador": "verde",
+            "cor": "#a9cfc4",
+            "qtd_exercitos": 1,
+            "continente": "Asia"
+        },
+        "Tuttoq": {
+            "x": 650,
+            "y": 110,
+            "jogador": "amarelo",
+            "cor": "#d8b5cc",
+            "qtd_exercitos": 1,
+            "continente": "Europa"
+        },
+        "Haneq": {
+            "x": 500,
+            "y": 110,
+            "jogador": "vermelho",
+            "cor": "#ebcaac",
+            "qtd_exercitos": 1,
+            "continente": "Europa"
+        },
+        "Ingassuit": {
+            "x": 400,
+            "y": 110,
+            "jogador": "azul",
+            "cor": "#ebdf99",
+            "qtd_exercitos": 1,
+            "continente": "Europa"
+        },
+        "Koptur": {
+            "x": 400,
+            "y": 240,
+            "jogador": "amarelo",
+            "cor": "#e0e0e0",
+            "qtd_exercitos": 1,
+            "continente": "Europa"
+        },
+        "Andur": {
+            "x": 520,
+            "y": 430,
+            "jogador": "azul",
+            "cor": "#c7d6b0",
+            "qtd_exercitos": 1,
+            "continente": "Australia"
+        },
+        "Kulyana": {
+            "x": 500,
+            "y": 210,
+            "jogador": "vermelho",
+            "cor": "#c7d6b0",
+            "qtd_exercitos": 1,
+            "continente": "Europa"
+        },
+        "Shore": {
+            "x": 100,
+            "y": 320,
+            "jogador": "azul",
+            "cor": "#bec6d7",
+            "qtd_exercitos": 1,
+            "continente": "Africa"
+        },
+        "Turabade": {
+            "x": 325,
+            "y": 298,
+            "jogador": "amarelo",
+            "cor": "#ceb3d2",
+            "qtd_exercitos": 1,
+            "continente": "Africa"
+        },
+        "Erdes": {
+            "x": 120,
+            "y": 420,
+            "jogador": "verde",
+            "cor": "#dadadc",
+            "qtd_exercitos": 1,
+            "continente": "Africa"
+        }
+    }
+}

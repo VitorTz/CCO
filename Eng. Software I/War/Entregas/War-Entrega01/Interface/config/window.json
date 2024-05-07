@@ -1,0 +1,29 @@
+{
+    "window": {
+        "bg-color": "#0f1923",
+        "title": "War",
+        "geometry": "1280x720",
+        "width": 1280,
+        "height": 720,
+        "frames": {
+            "top": {
+                "width": 910,
+                "height": 81,
+                "x": 220,
+                "y": 0
+            },
+            "mid": {
+                "width": 1280,
+                "height": 500,
+                "x": 0,
+                "y": 82
+            },
+            "bot": {
+                "width": 1280,
+                "height": 138,
+                "x": 0,
+                "y": 583
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <stdio.h>
+
+
+//                          (principal)
+//                               |
+//              +----------------+--------------+
+//              |                               |
+//           filho_1                         filho_2
+//              |                               |
+//    +---------+-----------+          +--------+--------+
+//    |         |           |          |        |        |
+// neto_1_1  neto_1_2  neto_1_3     neto_2_1 neto_2_2 neto_2_3
+
+// ~~~ printfs  ~~~
+//      principal (ao finalizar): "Processo principal %d finalizado\n"
+// filhos e netos (ao finalizar): "Processo %d finalizado\n"
+//    filhos e netos (ao inciar): "Processo %d, filho de %d\n"
+
+// Obs:
+// - netos devem esperar 5 segundos antes de imprmir a mensagem de finalizado (e terminar)
+// - pais devem esperar pelos seu descendentes diretos antes de terminar
+
+// Mostra a mensagem de inicialização dos filhos e netos
+
+
+// Implementa os netos
+void criaNetos(const pid_t pid_pai, const int qtdNetos) {
+    for (int i = 0; i < qtdNetos; i++) {
+        pid_t pid_neto = fork();
+        if (pid_neto == 0) {
+            pid_t pid = getpid();
+            printf("Processo %d, filho de %d\n", pid, pid_pai);
+            fflush(stdout);
+            sleep(5);
+            printf("Processo %d finalizado\n", pid);
+            fflush(stdout);
+            exit(0);
+        }
+    }
+    while(wait(NULL) >= 0);
+}
+
+// Implementa os filhos
+void criaFilhos(const pid_t pid_pai, const int qtdFilhos) {
+    for (int i = 0; i < qtdFilhos; i++) {
+        pid_t pid_filho = fork();
+        if (pid_filho == 0) {
+            pid_t pid = getpid();
+            printf("Processo %d, filho de %d\n", pid, pid_pai);
+            fflush(stdout);
+            // Cria 3 filhos de um mesmo pai
+            criaNetos(pid, 3);
+            printf("Processo %d finalizado\n", pid);
+            fflush(stdout);
+            exit(0);
+        }
+    }
+    while(wait(NULL) >= 0);
+}
+
+
+int main(int argc, char** argv) {
+    /*************************************************
+     * Dicas:                                        *
+     * 1. Leia as intruções antes do main().         *
+     * 2. Faça os prints exatamente como solicitado. *
+     * 3. Espere o término dos filhos                *
+     *************************************************/
+    pid_t pid_pai = getpid();
+    // Cria 2 processos filhos de um mesmo pai
+    criaFilhos(pid_pai, 2);
+    printf("Processo principal %d finalizado\n", pid_pai);
+    return 0;
+}

@@ -1,0 +1,33 @@
+{
+    "imagens": {
+        "mapa": "imagens/Mapas/Bonia 2022-09-13-16-39.png",
+        "interface": {
+            "vermelho": {
+                "btn-ver-objetivo": "imagens/interface/vermelho/botao/objetivos.png",
+                "btn-ver-exercitos": "imagens/interface/vermelho/botao/ver-exercitos.png",
+                "caixa-descricao-jogada": "imagens/interface/vermelho/label/label-vermelho.png",
+                "esperar": "imagens/interface/vermelho/acao/esperar.png",
+                "passar_turno": "imagens/interface/vermelho/acao/deslocar.png",
+                "atacar1": "imagens/interface/vermelho/acao/atacar.png",
+                "atacar2": "imagens/interface/vermelho/acao/atacar.png",
+                "fortificar": "imagens/interface/vermelho/acao/fortificar.png",
+                "deslocar1": "imagens/interface/vermelho/acao/deslocar.png",
+                "deslocar2": "imagens/interface/vermelho/acao/deslocar.png",
+                "btn-esperar": "imagens/interface/vermelho/botao/esperar.png",
+                "btn-fortificar": "imagens/interface/vermelho/botao/fortificar.png",
+                "btn-atacar1": "imagens/interface/vermelho/botao/atacar.png",
+                "btn-atacar2": "imagens/interface/vermelho/botao/atacar.png",
+                "btn-deslocar1": "imagens/interface/vermelho/botao/deslocar.png",
+                "btn-deslocar2": "imagens/interface/vermelho/botao/deslocar.png",
+                "btn-passar_turno": "imagens/interface/vermelho/botao/deslocar.png"
+            }
+        },
+        "label_tropas": {
+            "vermelho": "imagens/interface/vermelho/espaco-tropas/tropa-vermelho.png",
+            "amarelo": "imagens/interface/amarelo/espaco-tropas/tropa-amarelo.png",
+            "roxo": "imagens/interface/amarelo/espaco-tropas/tropa-amarelo.png",
+            "azul": "imagens/interface/azul/espaco-tropas/tropa-azul.png",
+            "verde": "imagens/interface/verde/espaco-tropas/tropa-verde.png"
+        }
+    }
+}
