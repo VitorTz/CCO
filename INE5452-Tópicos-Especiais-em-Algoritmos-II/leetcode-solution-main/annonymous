@@ -1,0 +1,83 @@
+// Problem 1- Sher to Mon
+// ===========================================================
+function seerToMon(sher) {
+if (sher >= 0) {
+let mon = sher / 40;
+return mon;
+}
+else {
+return 'error! Quantity should be a positive number. The conversion cannot be done';
+}
+}
+// Problem 2- Total sales
+// ========================================================
+function totalSales(shirtQuantity, pantQuantity, shoeQuantity) {
+const shirtPrice = 100, pantPrice = 200, shoePrice = 500;
+if (shoeQuantity >= 0 && pantQuantity >= 0 && shirtQuantity >= 0) {
+let totalSale = shirtQuantity * shirtPrice + pantQuantity * pantPrice + shoeQuantity * shoePrice;
+return totalSale;
+}
+else {
+return 'error! Quantity must need be a positive number'
+}
+}
+// Problem 3- Delivary Cost
+// ========================================================
+function deliveryCost(tshirtQuantity) {
+const firstHundred = 100, secondHundred = 80, greater2ndHundred = 50;
+if (tshirtQuantity >= 0) {
+if (tshirtQuantity <= 100) {
+return tshirtQuantity * firstHundred;
+}
+else if (tshirtQuantity <= 200) {
+const costHundred = 100 * firstHundred;
+let cost2Hundred = (tshirtQuantity - 100) * secondHundred;
+return costHundred + cost2Hundred;
+}
+else {
+const costHundred = 100 * 100;
+const cost2Hundred = 100 * 80;
+let costGreater2Hundred = (tshirtQuantity - 200) * greater2ndHundred;
+return costHundred + cost2Hundred + costGreater2Hundred;
+}
+}
+else {
+return 'error! Number of your product quantity should be a positive number'
+}
+}
+// Problem 4- Perfect Friend
+// ========================================================
+function perfectFriend(namesArray) {
+if (namesArray.length == 0) {
+return 'Array te apnr friend er kono name nai.Dhonnobad'
+}
+else {
+for (const name of namesArray) {
+if (typeof (name) == 'number') {
+return "Your friend's name should not be a number. Please update your name list"
+}
+else if (name.length == 5) {
+return name;
+}
+}
+return "You don't have any perfect friend"
+}
+}
+// test outputs
+// ==============================================================
+//1st problem output
+console.log(seerToMon(23));
+console.log(seerToMon(-1));
+//2nd problem output
+console.log(totalSales(5, 3, 6));
+console.log(totalSales(5, 'meem', 6));
+//3rd problem output
+console.log(deliveryCost(1000));
+console.log(deliveryCost(-8));
+//4th problem output
+const friendsNameNoError = ['meem', 'rumi', 'naba', 'saba', 'khaba', 'daba', 'dhaba', 'marhaba'];
+console.log(perfectFriend(friendsNameNoError));
+const friendsNameWithError = ['meem', 'rumi', 'naba', 'saba', 1, 'daba', 'dhaba', 'marhaba'];
+console.log(perfectFriend(friendsNameWithError));
+const friendsName0Perfect = [];
+console.log(perfectFriend(friendsName0Perfect));

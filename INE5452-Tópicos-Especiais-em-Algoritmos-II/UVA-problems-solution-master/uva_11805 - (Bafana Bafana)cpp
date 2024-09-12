@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,t,sum,cs=1;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a>>b>>c;
+        cout<<"Case "<<cs++<<": "<<(b+c-1)%a+1<<endl;
+    }
+}
