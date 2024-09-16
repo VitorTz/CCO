@@ -1,0 +1,3 @@
+/home/vitor/git/CCO/INE5452-Tópicos-Especiais-em-Algoritmos-II/VJudge/cmake-build-debug/CMakeFiles/VJudge.dir
+/home/vitor/git/CCO/INE5452-Tópicos-Especiais-em-Algoritmos-II/VJudge/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vitor/git/CCO/INE5452-Tópicos-Especiais-em-Algoritmos-II/VJudge/cmake-build-debug/CMakeFiles/rebuild_cache.dir
