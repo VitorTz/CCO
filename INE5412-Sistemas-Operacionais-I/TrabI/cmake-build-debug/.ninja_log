@@ -1,0 +1,5 @@
+# ninja log v6
+1	167	1726529842700564668	CMakeFiles/TrabI.dir/scheduling.cpp.o	d792054a8af9c310
+529	605	1726530895590012222	TrabI	f1bdd67eca83f893
+1	30	1726533626341583249	build.ninja	2731f51e6c3c1ec2
+1	529	1726530895062018764	CMakeFiles/TrabI.dir/main.cpp.o	cb2dffaeb3932f99

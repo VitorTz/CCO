@@ -1,7 +1,7 @@
-#include "Exhibition.h"
+#include "ContestScoreboard.h"
 
 
 int main(const int argc, char *argv[]) {
-    Exhibition solution{};
+    ContestScoreboard solution{};
     return solution.main(argc, argv);
 }

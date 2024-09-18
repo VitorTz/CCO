@@ -1,0 +1,3 @@
+/home/vitor/git/CCO/INE5412-Sistemas-Operacionais-I/TrabI/cmake-build-debug/CMakeFiles/TrabI.dir
+/home/vitor/git/CCO/INE5412-Sistemas-Operacionais-I/TrabI/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vitor/git/CCO/INE5412-Sistemas-Operacionais-I/TrabI/cmake-build-debug/CMakeFiles/rebuild_cache.dir

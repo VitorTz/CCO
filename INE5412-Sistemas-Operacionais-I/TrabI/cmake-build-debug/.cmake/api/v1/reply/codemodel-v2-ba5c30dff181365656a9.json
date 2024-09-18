@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "VJudge",
+					"name" : "TrabI",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "VJudge::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-VJudge-Debug-b34fb6163dc9e4469651.json",
-					"name" : "VJudge",
+					"id" : "TrabI::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TrabI-Debug-c8b87f702c7189a81bb8.json",
+					"name" : "TrabI",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/vitor/git/CCO/INE5452-T\u00f3picos-Especiais-em-Algoritmos-II/VJudge/cmake-build-debug",
-		"source" : "/home/vitor/git/CCO/INE5452-T\u00f3picos-Especiais-em-Algoritmos-II/VJudge"
+		"build" : "/home/vitor/git/CCO/INE5412-Sistemas-Operacionais-I/TrabI/cmake-build-debug",
+		"source" : "/home/vitor/git/CCO/INE5412-Sistemas-Operacionais-I/TrabI"
 	},
 	"version" : 
 	{

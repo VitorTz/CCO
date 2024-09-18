@@ -11,4 +11,6 @@ add_executable(VJudge main.cpp
         Conformity.h
         ClosestSums.h
         Exhibition.h
-        Multitasking.h)
+        Multitasking.h
+        HoaxOrwhat.h
+        ContestScoreboard.h)
