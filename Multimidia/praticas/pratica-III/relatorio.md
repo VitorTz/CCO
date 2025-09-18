@@ -2,23 +2,54 @@
 
 Abra o arquivo lena.bmp no editor hexadecimal em https://hexed.it/ e, analisando o formato do cabeçalho BMP apresentado na Seção 2, indique no relatório: qual é o valor dos campos offset e tamanho do arquivo? Quais são os valores dos componentes de cor R, G e B do primeiro pixel armazenado no arquivo
 
-# R: 
-
 - 36 (hexadecimal) ou 54 (decimal) bytes de offset
 - C0036 (hexadecimal) ou 786.486 (decimal) bytes de tamanho de arquivo.
 - B (39 hex), G (16 hex) e R (52 hex) | R (82 decimal), G (22 decimal) e B (57 decimal)
 
 # Questão 2
 
-Qual é o tamanho do cabeçalho do arquivo lena1.cuif para seu grupo
+Qual é o tamanho do cabeçalho do arquivo lena1.cuif para seu grupo?
 
-# R:
 - 18 bytes
+
+# Questão 3
+
+No arquivo praticaIII.py tem um função PSNR incompleta. Implemente esta função de maneira a
+calcular o PSRN passando como parâmetro a imagem original e uma decodificada. Implemente o cálculo do
+MAE e PSNR com base nas fórmulas da seção 5.
+
+``` python
+def MSE(ori: Image.Image, dec: Image.Image) -> float:
+    n = ori.width * ori.height * 3
+    count = 0
+    
+    for i in range(ori.width):
+        for j in range(ori.height):
+            ori_r, ori_g, ori_b = ori.getpixel((i, j))
+            dec_r, dec_g, dec_b = dec.getpixel((i, j))            
+            count += (ori_r - dec_r) ** 2
+            count += (ori_g - dec_g) ** 2
+            count += (ori_b - dec_b) ** 2
+            
+    return count / n
+
+
+def PSNR(original: Image.Image, decodificada: Image.Image, b: int) -> float | str:
+    try:
+        mse = MSE(original, decodificada)
+        if mse == 0:
+            return "Infinity"
+            
+        max_pixel_value = (2 ** b) - 1
+        psnr = 10 * math.log10((max_pixel_value ** 2) / mse)
+        return psnr
+    except ValueError as e:
+        return str(e)
+```
 
 # Questão 4
 
-Indique o PSNR comparando a imagem original mandril.bmp (original) com a imagem obtida a
-partir do arquivo CUIF.1 (lena1.bmp). Explique porque do resultado do PSNR para o caso do CUIF.1.
+Indique o PSNR comparando a imagem original mandril.bmp (original) com a imagem obtida a partir do arquivo CUIF.1 (lena1.bmp). Explique porque do resultado do PSNR para o caso do CUIF.1.
 
 # R: 
 Não foram aplicadas nenhum tipo de compressão no arquivo CUIF.1. O que mudou foi apenas ordem em que os valores R, G e B foram armazenados. 
@@ -32,7 +63,6 @@ Já o formato BMP armazena os valores de rgb juntos em ordem inversa, ou seja, B
 
 Compacte as imagens lena.bmp e lena1.cuif com zip. Qual a taxa de compressão obtida para os dois arquivos? Qual arquivo compactou mais? Explique porque deste resultado, ou seja, indique a vantagem de organizar os pixels nesta sequência definida pelo CUIF.1 (primeiro os valores de R, depois de G e finalmente de B) para a compressão baseada em RLE ou DPCM? Dica: relembre os princípios da compressão RLE e DPCM e compare a parte de dados de imagem do arquivo lena.bmp e lena1.cuif no editor hexadecimal.
 
-# R:
 
 - lena.bmp: 715.608 bytes
 
@@ -52,6 +82,7 @@ Já as imagens no formato cuif armazenam todos os valores R seguido de todos os 
 
 Agora altere o código em PraticaIII.py para que seja gerado o arquivo lena2.cuif, que utiliza a versão CUIF.2 (usar 2 em vez de 1 para indicação da versão) e lena2.bmp. Visualiza as imagens lena1.bmp e lena2.bmp para ver se existem diferenças visíveis. Analise o código que gera o arquivo CUIF.2 (em Cuif.py) e explique o princípio da compressão adotada no CUIF.2
 
+# R:
 
 A compressão adotada em CUIF.2 diminui o tamanho necessário para armazenar a cor de um pixel. Antes eram necessários 8 bits para cada canal (r, g e b) e agora são necessários apenas 8 bits para todos os 3 canais. A compressão pega apenas os 3 bits mais significativos do canal r, os 3 bits mais significativos do canal g e os 2 bits mais significativos do canal b, diminuindo o tamanho de um pixel de 24 bits para 8 bits.
 

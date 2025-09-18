@@ -1,7 +1,7 @@
 #
 #
 #
-# Vitor Fernando da Silva - Grupo Z
+# Vitor Fernando da Silva (20201566) - Grupo Z
 
 from pathlib import Path
 from urllib.request import urlopen
